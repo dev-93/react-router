@@ -14,12 +14,15 @@ function App() {
                 <li>
                     <Link to="/about">소개</Link>
                 </li>
+                <li>
+                    <Link to="/info">똑같은 소개</Link>
+                </li>
             </ul>
 
             <hr />
 
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+            <Route path={["/about", "/info"]} component={About} />
         </div>
     );
 }
