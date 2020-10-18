@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import About from "./About";
 import "./App.css";
 import Home from "./Home";
@@ -7,6 +7,17 @@ import Home from "./Home";
 function App() {
     return (
         <div className="App">
+            <ul>
+                <li>
+                    <Link to="/">홈</Link>
+                </li>
+                <li>
+                    <Link to="/about">소개</Link>
+                </li>
+            </ul>
+
+            <hr />
+
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
         </div>
