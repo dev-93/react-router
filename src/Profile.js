@@ -21,6 +21,8 @@ const Profile = ({ match }) => {
 
     return (
         <div>
+            <hr />
+
             <h3>
                 {username}({profile.name})
             </h3>

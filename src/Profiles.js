@@ -15,8 +15,6 @@ const Profiles = () => {
                 </li>
             </ul>
 
-            <hr />
-
             <Route exact path="/profiles" render={() => <div>사용자를 선택해 주세요.</div>} />
             <Route path="/profiles/:username" component={Profile} />
         </div>
